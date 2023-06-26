@@ -7,8 +7,13 @@
     <div class="items">
       <div class="app-video-title">{{title}}</div>
       <div class="video-names">
-        <ul >
-          <li *ngFor="let name of videoNames">{{name}}</li>
+        <ul style="list-style-type: none">
+          <li *ngFor="let name of videoNames">
+            <video width="400px" height="250px" preload="auto" controls>
+              <source src='http://localhost:8080/video/{{name}}' type="video/mp4" />
+              Browser not supported
+            </video>
+          </li>
         </ul>
       </div>
     </div>

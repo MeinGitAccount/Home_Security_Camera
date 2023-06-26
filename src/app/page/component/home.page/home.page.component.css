@@ -1,8 +1,6 @@
 .app-home-container {
   display: grid;
   grid-template-columns: auto 1fr;
-  /*border-style: outset;*/
-  /*border-bottom-color: lightgray;*/
 }
 
 .app-home-logo {

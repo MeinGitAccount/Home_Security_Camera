@@ -30,6 +30,14 @@ export class InitService {
     return this.http.get<string[]>(this.url+'/all');
   }
 
+  public getAllVideoNamesByRoom(room: string) {
+    return this.http.get<string>(this.url+'/all/' + room);
+  }
+
+  public getAllRoomNames() {
+    return this.http.get<string[]>(this.url + '/allRooms');
+  }
+
   // @GetMapping("/video/{name}")
   // public ResponseEntity<ByteArrayResource> getVideo(@PathVariable String name) {
   //   return ResponseEntity

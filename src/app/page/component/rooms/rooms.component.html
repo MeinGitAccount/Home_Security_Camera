@@ -7,10 +7,7 @@
     <div class="rooms-content">
       <div class="rooms-title">{{title}}</div>
       <div class="rooms-buttons">
-        <button (click)="goToPage('videos')"> Livingroom </button>
-        <button (click)="goToPage('videos')"> Bedroom </button>
-        <button (click)="goToPage('videos')"> Kitchen </button>
-        <button (click)="goToPage('videos')"> Hallway </button>
+        <button *ngFor="let room of roomNames" (click)="goToPage('videos')">{{room}}</button>
       </div>
     </div>
   </div>
