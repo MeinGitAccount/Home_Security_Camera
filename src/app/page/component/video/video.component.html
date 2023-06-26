@@ -1,0 +1,17 @@
+<div class="app-video-container">
+  <div class="app-menu-button">
+    <button (click)="goToPage('home')"> <img src = "assets/img/logo.png" height="60"> </button>
+  </div>
+
+  <div class="app-video-content">
+    <div class="items">
+      <div class="app-video-title">{{title}}</div>
+      <div class="video-names">
+        <ul >
+          <li *ngFor="let name of videoNames">{{name}}</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,28 @@
+<div class="app-home-container" xmlns="http://www.w3.org/1999/html">
+  <div class ="app-home-logo">  <img src="assets/img/logo.png"> </div>
+  <div class="app-home-title">{{title}}</div>
+
+  <div class="app-button-container">
+    <button (click)="goToPage('rooms')">
+      Rooms
+      <img src="assets/img/room.png" class="button-img">
+    </button>
+    <button>
+      Calender
+      <img src="assets/img/calender.png" class="button-img">
+    </button>
+    <button>
+      Members
+      <img src="assets/img/member.png" class="button-img">
+    </button>
+  </div>
+
+  <div class="button-recordings">
+    <button (click)="goToPage('videos')">-> Show all recordings</button>
+  </div>
+
+  <div class="button-settings">
+    <button>-> Settings</button>
+  </div>
+
+</div>
